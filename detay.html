@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniwma - Anime Detayları</title>
+</head>
+<body>
+    <header>
+        <h1>Aniwma</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li>
+                    <a href="#">Animeler</a>
+                    <ul>
+                        <li><a href="tani.html">En iyi animeler</a></li>
+                        <li><a href="donemsel.html">Dönemsel animeler</a></li>
+                        <li><a href="anihaber.html">Anime haberleri</a></li>
+                    </ul>
+                </li>
+                <li><a href="profil.html">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <a href="javascript:history.back()">&#8592; Geri Dön</a>
+        </section>
+        <section>
+            <h2>Frieren: Beyond Journey's End (Örnek Taslak)</h2>
+            <p>Büyücü Frieren ve cesur grubunun İblis Kral'ı yenmesinden sonraki yılları anlatan huzurlu ve duygusal bir yolculuk hikayesi.</p>
+            <h3>Listeme Ekle</h3>
+            <form action="#" method="post" style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                <label for="durum">İzleme Durumu:</label>
+                <select id="durum" name="durum" required>
+                    <option value="izliyorum">İzliyorum</option>
+                    <option value="tamamlandi">Tamamlandı</option>
+                    <option value="izlenecek">İzlemeyi Planlıyorum</option>
+                </select>
+                <label for="puan">Puanım:</label>
+                <select id="puan" name="puan">
+                    <option value="">Seçin</option>
+                    <option value="10">10 (Başyapıt)</option>
+                    <option value="9">9 (Harika)</option>
+                    <option value="8">8 (Çok güzel)</option>
+                    <option value="7">7 (Güzel)</option>
+                    <option value="6">6 (İyi)</option>
+                    <option value="5">5 (Ortalama)</option>
+                    <option value="4">4 (Kötü)</option>
+                    <option value="3">3 (Çok kötü)</option>
+                    <option value="2">2 (Korkunç)</option>
+                    <option value="1">1 (Rezalet)</option>
+                </select>
+                <label for="bolum">Bölüm:</label>
+                <input type="number" id="bolum" name="bolum" min="0" max="28" value="0" style="width: 50px;">
+                <button type="submit">Listeye Ekle</button>
+            </form>
+        </section>
+        <section>
+            <h3>Anime İstatistikleri</h3>
+            <table border="1">
+                <tr>
+                    <th>Stüdyo</th>
+                    <th>Bölüm Sayısı</th>
+                    <th>Yayın Yılı</th>
+                    <th>Durum</th>
+                    <th>Puan</th>
+                </tr>
+                <tr>
+                    <td>Madhouse</td>
+                    <td>28</td>
+                    <td>2023</td>
+                    <td>Tamamlandı</td>
+                    <td>9.3</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Aniwma-Anime Takip Projesi</p>
+    </footer>
+</body>
+</html>
